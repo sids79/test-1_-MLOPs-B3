@@ -25,7 +25,53 @@ We can also combine steps 2, 3, 4
 >> ls /c/Users/Dell/.ssh/
 >> cat /c/Users/Dell/.ssh/id_ed25519.pub
 
-Kaushik Mukhopadhyay ↓ 2303951 12:17
-Can you pl put the git clone command
+--------
 
-Nikhil Kulkarni ↓ 2304085 12:17
+#Git commands for public/private reposiroty
+#Everytime you will create a new repository follow the below steps:
+1. ssh-keygen -t ed25519 # this is command used to generate the ssh key
+3. Enter passphrase
+4. re-enter the passphrase
+5. cd "<to the path where the 2 files have created>"
+6. ls
+7. cat id_ed25519.pub
+   - copy the conent to GIT hub under the add SSH Key
+8. cd back to the directory where you want to work
+9. execute the git clone <use the ssh link copied from the git hub repository>
+   - there might be prompt to enter the passphrase
+10. git pull # To get the latest/updated code from the repository
+11. make the required changed the files.
+11. git add <>
+12. git commit -d ""
+13. git push # To push the data from local to the Github repository
+
+#Git commands for local repository
+1. get init <directory name>
+   - eg: git init trial
+2. git add <new file>
+3. git commit -m "<add your comment>"
+
+Arundhathi P V ↥ 2303616  to  Everyone 14:53
+#Git commands for public/private reposiroty
+#Everytime you will create a new repository follow the below steps:
+1. ssh-keygen -t ed25519 # this is command used to generate the ssh key
+3. Enter passphrase
+4. re-enter the passphrase
+5. cd "<to the path where the 2 files have created>"
+6. ls
+7. cat id_ed25519.pub
+   - copy the conent to GIT hub under the add SSH Key
+8. cd back to the directory where you want to work
+9. execute the git clone <use the ssh link copied from the git hub repository>
+   - there might be prompt to enter the passphrase
+10. git pull # To get the latest/updated code from the repository
+11. make the required changed the files.
+11. git add <>
+12. git commit -d ""
+13. git push # To push the data from local to the Github repository
+
+#Git commands for local repository
+1. get init <directory name>
+   - eg: git init trial
+2. git add <new file>
+3. git commit -m "<add your comment>"
